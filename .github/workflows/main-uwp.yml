@@ -3,8 +3,11 @@ name: Build UWP Application
 on:
   push:
     branches:
-      - main
-
+      - master
+    paths:
+      - "src/**/*"
+      - ".github/workflows/main_uwp.yml"
+      
 env:
   TELERIK_USERNAME: ${{ secrets.MyTelerikAccountUsername }}
   TELERIK_PASSWORD: ${{ secrets.MyTelerikAccountPassword }}
