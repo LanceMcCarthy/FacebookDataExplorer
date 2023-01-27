@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'src/**/*'
-      - '.github/workflows/main_build-uwp.yml' 
 
 env:
   TELERIK_USERNAME: ${{ secrets.MyTelerikAccountUsername }}
