@@ -14,7 +14,7 @@ namespace FacebookDataExplorer.Uwp.Services
 
         internal static async Task ShowIfAppropriateAsync()
         {
-            if (SystemInformation.IsAppUpdated && !shown)
+            if (SystemInformation.Instance.IsAppUpdated && !shown)
             {
                 shown = true;
                 var dialog = new WhatsNewDialog();
